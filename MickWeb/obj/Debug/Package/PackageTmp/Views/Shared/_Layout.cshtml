@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playboy Mick</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+
+        </div>
+        <div class="middle">
+
+
+            <div class="header">
+                <h1 class="header-heading">MICK McCabe Invitational </h1>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <img src="~/Content/images/WynstoneLogo.jpg" style="float:right;" />
+                @RenderBody()
+
+            </div>
+        </div>
+        <div class="right">
+  
+        </div>
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
